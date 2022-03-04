@@ -1,84 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+<html lang="pt-br">
 
-    <title>Tênis</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="Style/style.css">
+
+  <title>Detalhes do Produto</title>
 
 </head>
-<body style="min-width:372px;">
-    <header>
-        <div class="caixa-geral">
-            <div class="caixa-dir">
-                <div class="row">
-                    <div class="col-sm-4"><img src="Imagens/pesquisa.png"></div>
-                    <div class="col-sm-4"><img src="Imagens/compras.png"></div>
-                    <div class="col-sm-4"><img src="Imagens/usuario.png"></div>
-                  </div>
-            </div>         
 
-            <div class="caixa-esq"> 
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Promoção</a></li>
-                        <li><a href="#">Missão</a></li>
-                        <li><a href="#contato">Trabalhe Conosco</a></li>
-                    </ul>
-                </nav>
+<body>
+      <header>
+        <header>
+          <nav class="navbar py-0 navbar-expand-lg bg-light border-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand h6 flex-shrink-0 py-8" href="index.html">
+                <img class="img-fluid" src="Imagens/logo da loja.png" alt="logo da loja" width="120">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-lg-flex align-items-lg-center py-3 ps-2 pe-2 bg-dark rounded-3">
+                  <svg class="flex-shrink-0 me-2" style="width: 24px; height: 24px;" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 17.1309L12.5042 11.9551" stroke="red" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M7.27524 13.8672C10.8789 13.8672 13.8002 10.945 13.8002 7.34033C13.8002 3.73565 10.8789 0.813477 7.27524 0.813477C3.67159 0.813477 0.750244 3.73565 0.750244 7.34033C0.750244 10.945 3.67159 13.8672 7.27524 13.8672Z"
+                      stroke="red" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <input class="form-control bg-white border-0 me-lg-3" type="text" placeholder="O que você procura?">
+                  <select class="form-select bg-white ps-6 pe-6 border-0 border-start" style="color:#e5212b;" name="" id=""
+                    data-removed="true">
+                    <option>Todos&nbsp;Estilos
+                    <option>Corrida</option>
+                    <option>Crossfit</option>
+                    <option>Casual</option>
+                    </option>
+                  </select>
+                </div>
+                      <ul  class="navbar-nav me-12 mb-2 mb-lg-0 mx-auto py-10 px-xxl-12">
+                        <li class="nav-item"><a class="nav-link" style="color: #e5212b; font-size: xx-large;" aria-current="page" href="#">Missão</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #e5212b; font-size: xx-large;" aria-current="page" href="#">Ofertas</a></li>
+                      </ul>
+                <section>
+                <div class="position-img">
+                    <a class="bi bi-cart4 me-3" href="carrinho_vazio.html" style="color: black;" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    <a class="bi bi-person-check-fill me-3" href="carrinho_vazio.html" style="color: black; data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;">
+                        <h5 class="modal-title" style="color: white; text-transform: uppercase;" id="exampleModalLabel">Carrinho</h5>
+                        <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-lg-12" style="text-align: left;">
+                        <h2>Seu carrinho está vazio</h2>
+                        <p style="text-align: center;">Navegue pelas categorias da loja ou faça uma busca pelo seu produto</p>
+                          <div class="col-lg-12 p-0" style="text-align: right;">
+                            <a href="index.html">
+                              <button id="continuar-comprando" class="btn btn-secondary" data-bs-dismiss="modal">Continuar Comprando</button>
+                            </a> 
+                          </div>
+                      </div>
+                    </div>
+                      <div class="modal-footer p-0">
+                        <button id="estiloBotaoFechar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                <div>
+                  <a class="btn btn-outline-dark me-3" href="index_login.html" role="button">Login</a>
+                  <a class="btn btn-outline-danger me-3" href="index_login.html" role="button">Sign-up</a>
+                </div>
+              </div>
             </div>
-        </div>
-      </header>
-      
-      <h1 class="text-center">Você está quase lá</h1>
-      <div class="container">
+          </nav>
+        </header>
+
+  <h1 class="text-center">Você está quase lá</h1>
+
+  <section class="py-20 overflow-hidden">
+    <div class="container">
+      <div class="row mb-24">
+        <div class="col-6 col-md-6 mb-8 mb-md-0">
+          <div class="position-relative mb-10" style="height: 400px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Imagens/tenis nike/tenis1.png" height="400" class="d-block w-100"
+                    alt="imagem tênis crossfit">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagens/tenis nike/tenis2.png" height="400" class="d-block w-100"
+                    alt="imagem tênis de corrida">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagens/tenis nike/tenis3.png" height="400" class="d-block w-100" alt="imagem tênis casual">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagens/tenis nike/tenis4.png" height="400" class="d-block w-100" alt="imagem tênis casual">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagens/tenis nike/tenis5.png" height="400" class="d-block w-100" alt="imagem tênis casual">
+                </div>
+                <div class="carousel-item">
+                  <img src="Imagens/tenis nike/tenis6.png" height="400" class="d-block w-100" alt="imagem tênis casual">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
           <div class="row">
-            <div class="container span7 text-center col-md-4 col-md-offset-3" style="margin: 0 auto;float: none; border: 3px solid red">
-              <img src="Imagens/tenis18.png" height="270" class="img-fluid"  class="img-thumbnail" alt="teste">
-              CORRIDA
-              <p>TÊNIS ADIDAS ULTRABOOST 5.0 DNA</p>
-              <p>R$899,99</p>
-              <a href="index_Compra.html">
-              <button type="button" class="btn btn-outline-secondary">TAMANHO</button>
-              <button type="button" class="btn btn-outline-secondary">CORES</button>
-              <button type="button"  class="btn btn-outline-danger">ADD CARINHO</button></a>
+            <div class="col-3 col-sm-3 p-2">
+              <a class="d-block border border-info" href="#">
+                <img class="w-100 img-fluid" style="height: 128px;" src="Imagens/tenis nike/tenis3.png"
+                  alt="imagem de tênis">
+              </a>
             </div>
-            <div class="container span7 text-center col-md-4 col-md-offset-3" style="margin: 0 auto;float: none; border: 3px solid red">
-            <h5>•  Detalhes do Produto • </h5>
-              <p> O tênis adidas Ultraboost estreou em 2015 e nunca se limitou às corridas. Por um bom motivo. O cabedal adidas Primeknit envolve seus pés com suporte, adaptando-se à mudança de formato do seu pé a cada decolagem e aterrissagem. O amortecimento Boost oferece retorno de energia a cada passo dado. Quanto mais energia você libera, mais recebe de volta. Então, dê o melhor de si. Este tênis foi feito para isso.</p>
+            <div class="col-3 col-sm-3 p-2">
+              <a class="d-block" href="#">
+                <img class="w-100 img-fluid" style="height: 128px;" src="Imagens/tenis nike/tenis4.png"
+                  alt="imagem de tênis">
+              </a>
+            </div>
+            <div class="col-3 col-sm-3 p-2">
+              <a class="d-block" href="#">
+                <img class="w-100 img-fluid" style="height: 128px;" src="Imagens/tenis nike/tenis5.png"
+                  alt="imagem de tênis">
+              </a>
+            </div>
+            <div class="col-3 col-sm-3 p-2">
+              <a class="d-block" href="#">
+                <img class="w-100 img-fluid" style="height: 128px;" src="Imagens/tenis nike/tenis6.png"
+                  alt="imagem de tênis">
+              </a>
             </div>
           </div>
         </div>
+        <div class="col-6 col-md-6">
+          <div class="ps-lg-20">
+            <div class="mb-10 pb-10 border-bottom">
+              <span class="text-secondary">Treino e Academia</span>
+              <h1 class="mt-2 mb-6 mw-xl">Tênis Nike City Rep TR Masculino</h1>
+              <div class="mb-8">
+                <button class="btn p-0">
+                  <img class="img-fluid" src="yofte-assets/elements/star-gold.svg" alt="">
+                </button>
+                <button class="btn p-0">
+                  <img class="img-fluid" src="yofte-assets/elements/star-gold.svg" alt="">
+                </button>
+                <button class="btn p-0">
+                  <img class="img-fluid" src="yofte-assets/elements/star-gold.svg" alt="">
+                </button>
+                <button class="btn p-0">
+                  <img class="img-fluid" src="yofte-assets/elements/star-gold.svg" alt="">
+                </button>
+                <button class="btn p-0">
+                  <img class="img-fluid" src="yofte-assets/elements/star-gray.svg" alt="">
+                </button>
+              </div>
+              <p class="d-inline-block mb-8 h5 text-info">
+                <span class="fw-normal text-secondary text-decoration-line-through" style="font-size: 16px;"> De
+                  R$513.69</span>
+                <span style="color: #e5212b;">Por R$499.99</span>
+              </p>
+              <p class="mw-md text-secondary">O Nike City Rep TR é um tênis versátil com durabilidade e flexibilidade
+                para o seu estilo de vida urbana. </p>
+            </div>
+            <div class="d-flex mb-12">
+              <div class="me-6">
+                <span class="d-block mb-2 fw-bold text-secondary tetx-uppercase">QTD</span>
+                <div class="d-inline-flex align-items-center px-4 text-secondary border-0">
+                  <button class="btn px-0 py-4">
+                  </button>
+                  <input class="form-control m-0 px-2 py-4 text-center text-md-end border-0"
+                    style="width: 68px; background-color: white; height: 22px;" type="number" placeholder="0">
+                  <button class="btn px-0 py-4">
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span class="d-block mb-2 fw-bold text-secondary text-uppercase">tamanho</span>
+                <select class="form-select border ps-6 pe-10 py-4 fw-bold text-secondary"
+                  style="width: 68px; height: 22px;" name="" id="">
+                  <option value="1">34</option>
+                  <option value="2">35</option>
+                  <option value="3">36</option>
+                  <option value="1">37</option>
+                  <option value="2">38</option>
+                  <option value="3">39</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-14">
+              <div class="col-6 col-xl-8 mb-4 mb-xl-0"><a class="btn w-100 btn-outline-danger"
+                  href="index_Compra.html">Adicione ao Carrinho</a></div>
+              <div class="col-12 col-xl-8">
+                <a class="h-100 ms-auto ms-sm-0 flex-shrink-0 d-inline-flex me-4 align-items-center justify-content-center rounded-2 border"
+                  href="#" style="width: 64px; min-height: 52px;">
+                  <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.4993 26.2061L4.70067 16.9253C3.9281 16.1443 3.41815 15.1374 3.24307 14.0471C3.06798 12.9568 3.23664 11.8385 3.72514 10.8505V10.8505C4.09415 10.1046 4.63318 9.45803 5.29779 8.96406C5.96241 8.47008 6.73359 8.14284 7.54782 8.00931C8.36204 7.87578 9.19599 7.93978 9.98095 8.19603C10.7659 8.45228 11.4794 8.89345 12.0627 9.48319L13.4993 10.9358L14.9359 9.48319C15.5192 8.89345 16.2327 8.45228 17.0177 8.19603C17.8026 7.93978 18.6366 7.87578 19.4508 8.00931C20.265 8.14284 21.0362 8.47008 21.7008 8.96406C22.3654 9.45803 22.9045 10.1046 23.2735 10.8505V10.8505C23.762 11.8385 23.9306 12.9568 23.7556 14.0471C23.5805 15.1374 23.0705 16.1443 22.298 16.9253L13.4993 26.2061Z"
+                      stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+                <a class="flex-shrink-0 h-100 d-inline-flex align-items-center justify-content-center rounded-2 border"
+                  href="#" style="width: 64px; min-height: 52px;">
+                  <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.01328 18.9877C2.05682 16.7902 2.71436 12.9275 6.3326 9.87096L6.33277 9.87116L6.33979 9.86454L6.3398 9.86452C6.34682 9.85809 8.64847 7.74859 13.4997 7.74859C13.6702 7.74859 13.8443 7.75111 14.0206 7.757L14.0213 7.75702L14.453 7.76978L14.6331 7.77511V7.59486V3.49068L21.5728 10.5736L14.6331 17.6562V13.6558V13.5186L14.4998 13.4859L14.1812 13.4077C14.1807 13.4075 14.1801 13.4074 14.1792 13.4072M2.01328 18.9877L14.1792 13.4072M2.01328 18.9877C7.16281 11.8391 14.012 13.3662 14.1792 13.4072M2.01328 18.9877L14.1792 13.4072M23.125 10.6961L23.245 10.5736L23.125 10.4512L13.7449 0.877527L13.4449 0.571334V1V6.5473C8.22585 6.54663 5.70981 8.81683 5.54923 8.96832C-0.317573 13.927 0.931279 20.8573 0.946581 20.938L0.946636 20.9383L1.15618 22.0329L1.24364 22.4898L1.47901 22.0885L2.041 21.1305L2.04103 21.1305C4.18034 17.4815 6.71668 15.7763 8.8873 15.0074C10.9246 14.2858 12.6517 14.385 13.4449 14.4935V20.1473V20.576L13.7449 20.2698L23.125 10.6961Z"
+                      fill="black" stroke="black" stroke-width="0.35"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="row">
+                <div class="col-8 col-md-offset-3 p-2">
+                  <p class="me-8 mb-lg-0 text-secondary fw-bold text-uppercase">Compartilhe com Seus Amigos:</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-offset-3 p-2">
+                  <a class="d-block" href="#">
+                    <img class="img-fluid" src="Imagens/facebook.png" width="60px" alt="imagem facebook">
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-offset-3 p-2">
+                  <a class="d-block" href="#">
+                    <img class="img-fluid" src="Imagens/instagram.png" width="60px" alt="imagem instagram">
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-offset-3 p-2">
+                  <a class="d-block" href="#">
+                    <img class="img-fluid" src="Imagens/zap.png" width="60px" alt="imagem whatzap">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="row">
+          <h3 class="mb-8" style="color: black;">Saiba mais informações:</h3>
+          <div class="border col-lg-12" style="height: 100px; background-color: aliceblue;">
+            <details>
+              <summary style="color:#e5212b">Detalhes do Produto</summary>
+              <p>O Nike City Rep TR é um tênis versátil com durabilidade e flexibilidade para o seu estilo de vida
+                urbana. O piso de borracha proporciona maior aderência em várias superfícies, enquanto o amortecimento
+                de espuma deixa seu pé confortável, desde treinos ao ar livre até o resto do dia.</p>
+            </details>
+          </div>
+          <div class="border col-lg-12" style="height: 100px; background-color: aliceblue;">
+            <details>
+              <summary style="color:#e5212b">Resistência</summary>
+              <p>A parte de cima durável é reforçada com sobreposições para resistir às exigências dos treinos ao ar
+                livre. A espuma amortece seu pé com conforto que dura desde um treino rápido até o dia todo.</p>
+            </details>
+          </div>
+          <div class="border col-lg-12" style="height:100px; background-color: aliceblue;">
+            <details>
+              <summary style="color:#e5212b">Conforto</summary>
+              <p>O piso de borracha proporciona tração em várias superfícies. Os arcos nas laterais garantem
+                durabilidade onde é necessário para as placas e movimentos laterais.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="col-md-12 fundo" align="center">
+      <a class="btn btn-outline-light me-1" href="index.html" role="button">Continuar Comprando</a>
+      <a class="btn btn-outline-light me-3" href="index_login.html" role="button">Acesse sua Conta</a>
+    </div>
+  </section>
+  <section>
+    <div class="col-md-12 fundo" style="background-color:black">
+      <form id="form-newsletter" class="mt-8 px-4 text-center" style="background-color: white;">
+        <img class="mb-2" src="Imagens/correios.png"><img>
+        <h3 class="font-bold" style="color: black;">RECEBA AS NOVIDADES DA MEGATÊNIS</h3>
+        <p style="color: black;">Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.</p>
+        <a target="_blank" href="cadastre_se.html"><button class="btn btn-outline-danger me-1" type="button">Inscreva-se</button></a>
+      </form>
+    </div>
+  </section>
 
 
+  <footer>
+    <section>
+      <div class="row pb-20 text-danger text-center">
+        <div class="col-3 col-md-6 col-lg-4 mb-10 mb-lg-0">
+          <h6 class="mb-8">Informações</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Nossa Loja</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Missão</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Novidades</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;"
+                href="#">Sustentabilidade</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Relacionamento
+                Cliente</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Cartão Presente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-10 mb-lg-0">
+          <h6 class="mb-8">Serviços ao Cliente</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Acompanhar
+                Pedido</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Regras
+                Pagamentos</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Trocas e
+                Devoluções</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Cancelar
+                Pedidos</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Entregas</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-6 col-lg-4">
+          <h6 class="mb-8">Contato</h6>
+          <ul class="list-unstyled">
+            <li class="mb-6">
+              <p class="mb-2">Telefone</p>
+              <a class="link-info text-decoration-none" href="#">+55 9 9977-7855</a>
+            </li>
+            <li class="mb-6">
+              <p class="mb-2">Email</p>
+              <a class="link-info text-decoration-none" href="#">megatenis.com.br</a>
+            </li>
+            <li>
+              <p class="mb-2">Live Chat</p>
+              <a class="link-info text-decoration-none" href="#">MEGATÊNIS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-md-6 col-lg-4" style="color:white;">
+              <p>Formas de Pagamento:</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4" style="color:white;">
+              <img class="me-4 mb-2 img-fluid" style="width: 12%; height: 50%;" src="Imagens/visa.png"
+                alt="imagem bandeira visa">
+              <img class="me-4 mb-2 img-fluid" style="width: 12%; height: 50%;" src="Imagens/master.png"
+                alt="imagem bandeira master">
+              <img class="me-2 mb-2 img-fluid" style="width: 12%; height: 50%;" src="imagens/boleto.png"
+                alt="imagem boleto bancario">
+            </div>
+            <div class="col-3 col-md-6 col-lg-4" style="color:white;">
+              <p>© Copyright 2022 MegaTênis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="App/app.js"></script>
 </body>
 
-<footer>
-  <br><br>
-   <address style="background-color:rgb(224, 68, 68)">
-     Autor: Renan Mendes - Desenvolvedor Front-end<br>
-     <a href="#"><img src="Imagens/facebook.png" align="right" alt="Logo Facebook"></a>
-     <a href="#"><img src="Imagens/instagram.png" align="right" alt="Logo Instagram"></a>
-     <a href="#"><img src="Imagens/github.png" align="right" alt="Logo Github"></a>
-     <a href="#"><img src="Imagens/seta.png" align="right" alt="Logo seta"></a>
-     Voce pode contratar os serviços em: <a href="http://renanalista@gmail.com">renanalista@gmail.com</a>.<br>
-     telefone: (31)99778-7810.<br>
-     Você também conhecer nossa loja física:<br>
-     Rua Juraciara 317, B. Emília<br>
-     Sete Lagoas - MG<br>
-     Brasil<br>
-     
-   </address>
- 
- </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="App/app.js"></script>
 </html>
