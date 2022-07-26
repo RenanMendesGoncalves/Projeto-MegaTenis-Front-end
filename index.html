@@ -1,180 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="AULA3_CSS/style_academia.css">
-    <title>Home - Viva em Forma</title>
-    <meta name="" discription="Site Oficial da Academia do Renanzinho">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="Style/style.css">
+  <title>Tênis</title>
+
 </head>
+
+
+
 <body>
-    <header>
-        
-            <h1 class="teste">Academia - Viva em Forma </h1>
-            <hr>
-            <div class="menu">
-                <span style="color: #b90606;"> Home--</span>
-                <span style="color: #b90606;"> Modalidades -- </span>
-                <span style="color: #b90606;">Infantil -- </span>
-                <span style="color: #b90606;">Avaliação Funcional -- </span>
-                <span style="color: #b90606;">Contato -- </span>
-                <span style="color: #b90606;">Sobre  </span>
+  <header>
+    <nav class="navbar py-0 navbar-expand-lg bg-light border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand h6 flex-shrink-0 py-8" href="index.html">
+          <img class="img-fluid" src="Imagens/logo da loja.png" alt="logo da loja" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-lg-flex align-items-lg-center py-3 ps-2 pe-2 bg-dark rounded-3">
+            <svg class="flex-shrink-0 me-2" style="width: 24px; height: 24px;" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.5 17.1309L12.5042 11.9551" stroke="red" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="M7.27524 13.8672C10.8789 13.8672 13.8002 10.945 13.8002 7.34033C13.8002 3.73565 10.8789 0.813477 7.27524 0.813477C3.67159 0.813477 0.750244 3.73565 0.750244 7.34033C0.750244 10.945 3.67159 13.8672 7.27524 13.8672Z"
+                stroke="red" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <input class="form-control bg-white border-0 me-lg-3" type="text" placeholder="O que você procura?">
+            <select class="form-select bg-white ps-6 pe-6 border-0 border-start" style="color:#e5212b;" name="" id=""
+              data-removed="true">
+              <option>Todos&nbsp;Estilos
+              <option>Corrida</option>
+              <option>Crossfit</option>
+              <option>Casual</option>
+              </option>
+            </select>
+          </div>
+                <ul  class="navbar-nav me-12 mb-2 mb-lg-0 mx-auto py-10 px-xxl-12">
+                  <li class="nav-item"><a class="nav-link" style="color: #e5212b; font-size: xx-large;" aria-current="page" href="#">Missão</a></li>
+                  <li class="nav-item"><a class="nav-link" style="color: #e5212b; font-size: xx-large;" aria-current="page" href="#">Ofertas</a></li>
+                </ul>
+          <section>
+          <div class="position-img">
+              <a class="bi bi-cart4 me-3" href="index_carrinho_vazio.html" style="color: black;" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+              <a class="bi bi-person-check-fill me-3" href="index_login.html" style="color: black; data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: black;">
+                  <h5 class="modal-title" style="color: white; text-transform: uppercase;" id="exampleModalLabel">Carrinho</h5>
+                  <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="col-lg-12" style="text-align: left;">
+                  <h2>Seu carrinho está vazio</h2>
+                  <p style="text-align: center;">Navegue pelas categorias da loja ou faça uma busca pelo seu produto</p>
+                    <div class="col-lg-12 p-0" style="text-align: right;">
+                      <a href="index.html">
+                        <button id="continuar-comprando" class="btn btn-secondary" data-bs-dismiss="modal">Continuar Comprando</button>
+                      </a> 
+                    </div>
+                </div>
+              </div>
+                <div class="modal-footer p-0">
+                  <button id="estiloBotaoFechar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-      
-      
-    </header>
+          </div>
+        </section>
+          <div>
+            <a class="btn btn-outline-dark me-3" href="index_login.html" role="button">Login</a>
+            <a class="btn btn-outline-danger me-3" href="index_cadastro.html" role="button">Sign-up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-   
-    <main>
-        <!-- main: principal. tag semântica que indica onde guardamos informações principais do site -->
+  <h1 class="text-center">Tênis para todos os estilos:</h1>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagens/crossfit.jpeg" height="400" class="d-block w-100" alt="imagem tênis crossfit">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens/corrida.jpeg" height="400" class="d-block w-100" alt="imagem tênis de corrida">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens/casual.jpeg" height="400" class="d-block w-100" alt="imagem tênis casual">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1 class="text-center">Encontre o Tênis perfeito para você</h1>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/tenis18.png" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CORRIDA
+          <p>TÊNIS ADIDAS ULTRABOOST 5.0 DNA</p>
+          <p>R$899,99</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/tenis13.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CORRIDA
+          <p>TÊNIS NIKE AIR ZOOM TEMPO </p>
+          <p>R$1199,00</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+          <button type="button" class="disabled btn-outline-danger">Avise-me quando Chegar</button>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/tenis19.png" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CORRIDA
+          <P>TÊNIS FILA RACER CARBON</P>
+          <P>R$759,00</P>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/teniscross1.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CROSSFIT
+          <p>TÊNIS NIKE METCON 7</p>
+          <p>R$749,99</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/teniscross2.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CROSSFIT
+          <p>TÊNIS REEBOK NANO X1 </p>
+          <p>R$699,00</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/teniscross3.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CROSSFIT
+          <P>TÊNIS EVERLAST MONSTER</P>
+          <P>R$339,90</P>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/casual1.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CASUAL
+          <p>TÊNIS NIKE SB</p>
+          <p>R$549,99</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/casual2.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CASUAL
+          <p>TÊNIS REEBOK ROYAL TECHQUE</p>
+          <p>R$349,00</p>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+        <div class="container span7 text-center col-md-4 col-md-offset-3"
+          style="margin: 0 auto;float: none; border: 3px solid red">
+          <img src="Imagens/casual3.jpeg" height="270" class="img-fluid" class="img-thumbnail" alt="teste">
+          CASUAL
+          <P>TÊNIS FILA COURT ETNA</P>
+          <P>R$329,90</P>
+          <a href="index_Produto.html">
+            <button type="button" class="btn btn-outline-danger">COMPRAR</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h6 style="margin-left: 65%;">Ainda não encontrou o que procura?</h6>
+        </div>
+        <div class="col-md-3">
+          <nav aria-label="Page navigation" style="float:right">
+            <ul class="pagination border border-danger rounded-3">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous" style="color: black; background: firebrick;">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" style="color: black;" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" style="color: black;" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" style="color: black;" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" style="color: black;" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" style="color: black;" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next" style="color: black; background:firebrick;">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
-        <h1 align="center"> Conheça nossos serviços.</h1>
-        <h2 align="center"> Conheça nossa academia!</h2>
-
-
-
-                 
-        <table align="center" border="1">
-          <tr>
-            <th style="background-color:rgb(224, 68, 68)" align="center" > Musculação</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Fisioterpia</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Yoga</th>
-          </tr>
-          <tr>
-            <td> <img width=490px height=275px src="assets/musculação.jpeg" alt="foto de musculação"></td>
-            <td> <img width=490px height=275px src="assets/fisioterapia.jpeg" alt="foto de fisioterapia"></td>
-            <td> <img width=490px height=275px src="assets/ioga.jpeg" alt="foto de um grupo de pessoas praticando yoga"></td>
-            
-          </tr>
-          <tr>
-            <td> <p style="text-align: center;" width=490px height=275px> A musculação é uma modalidade de treinamento físico realizado contra resistência de pesos externos, chamada também de treino resistido, que tem como objetivo o aumento hipertrofia muscular, ganho de força e potência. É uma atividade de duração instantânea e elevada intensidade.</td>
-            <td> <p style="text-align: center;" width=490px height=275px> É a ciência que estuda, diagnostica, previne e recupera pacientes com distúrbios cinéticos funcionais intercorrentes em órgãos e sistemas do corpo humano. O objetivo desta área é preservar, manter, desenvolver ou restaurar (reabilitação) a integridade de órgãos, sistemas ou funções. Utiliza-se de conhecimento e recursos próprios como parte do processo terapêutico nas condições psico-físico-social para promover melhoria de qualidade de vida.<p></td>
-            <td><p style="text-align: center;" width=490px height=275px> Se você acha que yoga é apenas torcer e movimentar o corpo de forma esquisita, está na hora de repensar. Yoga é muito mais do que posturas. Yoga é um conjunto de conhecimentos de mais de 5 mil anos. Yoga é harmonizar o corpo com a mente e a respiração, através de técnicas de respiração (pranayamas), posturas de yoga (ásanas) e meditação.</p></td>
-          </tr>
-          <tr>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Bike</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >CrossFit</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Zumba</th>
-          </tr>
-          <tr>
-            <td> <img width=490px height=275px src="assets/bike.jpeg" alt="foto de bike"></td>
-            <td> <img width=490px height=275px src="assets/crossfit.jpeg" alt="foto de crossfit"></td>
-            <td> <img width=490px height=275px src="assets/zumba.jpeg" alt="foto de zumba"></td>
-            
-          </tr>
-          <tr>
-            <td> <p style="text-align: center;" width=490px height=275px> O ciclismo indoor é uma atividade de alta intensidade que ajuda nosso corpo a queimar gordura rapidamente, melhora a saúde do coração e aumenta a resistência muscular. É um exercício muito forte para as pernas. No final de cada treino, a produção de endorfina é alta e a sensação de bem-estar é inevitável..</td>
-            <td> <p style="text-align: center;" width=490px height=275px> CrossFit é um programa de treinamento de força e condicionamento geral que proporciona a mais ampla adaptação fisiológica possível para qualquer tipo de pessoa, independente de idade ou nível físico, gerando assim uma maior otimização de todas as capacidades físicas; são elas: resistência cardiorrespiratória, resistência muscular, força, flexibilidade, potência, velocidade, coordenação, agilidade, equilíbrio e precisão.<p></td>
-            <td><p style="text-align: center;" width=490px height=275px> Zumba é um exercício físico aeróbico baseado em movimentos de danças latinas, como o merengue, a cumbia, a salsa, o reggaeton, entre outros. As coreografias são fáceis para que todos consigam acompanhar o ritmo, mesmo aquelas pessoas que nunca foram a rainha do gingado. E o melhor: você malha o corpo todo sem perceber a hora passar.</p></td>
-          </tr>
-          <tr>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Circo Infantil</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Ginástica Artística</th>
-            <th style="background-color:rgb(224, 68, 68)" align="center" >Acrobacia Aérea</th>
-          </tr>
-          <tr>
-            <td> <img width=490px height=275px src="assets/circo infantil.jpeg" alt="foto de alunos no circo"></td>
-            <td> <img width=490px height=275px src="assets/ginástica artistica.jpeg" alt="foto de ginástica Artística"></td>
-            <td> <img width=490px height=275px src="assets/acrobacia.jpeg" alt="foto de Acrobacia"></td>
-            
-          </tr>
-          <tr>
-            <td> <p style="text-align: center;" width=490px height=275px> A modalidade tem como objetivo preparar o corpo dos alunos para as demais atividades circenses. Utilizam-se colchões, plintos, tábuas de impulsão e mini-tramp. Consiste na execução de acrobacias, que são movimentos ginásticos rápidos e técnicos que exigem muito condicionamento físico, força, destreza, impulsão e concentração. Trabalham-se todos os grandes grupos musculares.</td>
-            <td> <p style="text-align: center;" width=490px height=275px> É uma modalidade esportiva que envolve um conjunto de movimentos. Esses movimentos exigem precisão, força, flexibilidade, agilidade, coordenação e equilíbrio. Portanto, o domínio do corpo é uma das principais características desses atletas.<p></td>
-            <td><p style="text-align: center;" width=490px height=275px> Aparelho aéreo que tem como característica o trabalho simultâneo dos membros superiores e inferiores. Consiste em pendurar-se, enrolar-se no tecido e realizar quedas, posições invertidas ou posturas estáticas. Esse número trabalha todos os grupos musculares, com ênfase nos membros superiores e costas. Melhora a flexibilidade, a agilidade, a resistência e a força dos membros superiores.</p></td>
-          </tr>
-        </table>
-
-            <div>
-                <h1 style="background-color:rgb(224, 68, 68)" align="center" >Os números não metem!! </h1>
-                <img src="assets/img1.png" align="center" width="100px" height="100px" alt="indicador númerico";>
-                <h2> Aulas por semana em vários horários </h2>
+  <footer>
+    <section>
+      <div class="row pb-20 text-danger text-center">
+        <div class="col-3 col-md-6 col-lg-4 mb-10 mb-lg-0">
+          <h6 class="mb-8">Informações</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Nossa Loja</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Missão</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Novidades</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;"
+                href="#">Sustentabilidade</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Relacionamento
+                Cliente</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Cartão Presente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 mb-10 mb-lg-0">
+          <h6 class="mb-8">Serviços ao Cliente</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Acompanhar
+                Pedido</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Regras
+                Pagamentos</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Trocas e
+                Devoluções</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Cancelar
+                Pedidos</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">Entregas</a></li>
+            <li class="mb-6"><a class="link-dark text-decoration-none" style="color:white;" href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-6 col-lg-4">
+          <h6 class="mb-8">Contato</h6>
+          <ul class="list-unstyled">
+            <li class="mb-6">
+              <p class="mb-2">Telefone</p>
+              <a class="link-info text-decoration-none" href="#">+55 9 9977-7855</a>
+            </li>
+            <li class="mb-6">
+              <p class="mb-2">Email</p>
+              <a class="link-info text-decoration-none" href="#">megatenis.com.br</a>
+            </li>
+            <li>
+              <p class="mb-2">Live Chat</p>
+              <a class="link-info text-decoration-none" href="#">MEGATÊNIS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-md-6 col-lg-4" style="color:white;">
+              <p>Formas de Pagamento:</p>
             </div>
-            <div>
-                <img src="assets/img2.png" align="center" width="100px" height="100px" alt="indicador númerico";>
-                <h2> Aulas por semana em vários horários </h2>
+            <div class="col-6 col-md-6 col-lg-4" style="color:white;">
+              <img class="me-4 mb-2 img-fluid" style="width: 12%; height: 50%;" src="Imagens/visa.png"
+                alt="imagem bandeira visa">
+              <img class="me-4 mb-2 img-fluid" style="width: 12%; height: 50%;" src="Imagens/master.png"
+                alt="imagem bandeira master">
+              <img class="me-2 mb-2 img-fluid" style="width: 12%; height: 50%;" src="imagens/boleto.png"
+                alt="imagem boleto bancario">
             </div>
-            <div>
-                <img src="assets/img3.png" align="center" width="100px" height="100px" alt="indicador númerico";>
-                <h2> Profissionais focados nos seus objetivos </h2>
+            <div class="col-3 col-md-6 col-lg-4" style="color:white;">
+              <p>© Copyright 2022 MegaTênis</p>
             </div>
-            <div>
-                <img src="assets/img4.png" align="center" width="100px" height="100px" alt="indicador númerico";>
-                <h2> Seguidores acompanham a Viva em Forma nas redes sociais </h2>
-            </div>
-            
-
-    </main>
-<br>
-<hr>
-
-
-<h1 style="background-color:rgb(224, 68, 68)" align="center" >Vejam o que dizem sobre a Viva em Forma </h1>
-
-<table>
-    <tr>
-      <th>Carlos Paixão</th>
-      <th>Bernardo Caldeira</th>
-      <th>Lenice Santos</th>
-    </tr>
-    <tr>
-      <td><center>Aparelhos impressionantes e muita tecnologia
-        Excelente. Otima infraestrutura, profissionais muito bem treinados e capacitados, incrivelmente simpáticos. Os aparelhos são realmente impressionantes, tudo com muita tecnologia. Talvez a melhor de Sete Lagoas.</center> </td>
-      <td><center>Alto nível, profissionais muito qualificados
-        Academia de ótimo nível, super novinha máquinas e condições de alto nível, profissionais muito qualificados. Sem dúvida uma das melhores e mais completas academias de Sete Lagoas!</center></td>
-      <td><center>Ambiente familiar e melhor estrutura
-        Ambiente familiar! Melhor estrutura, equipamentos e profissionais de Sete Lagoas!</center></td>
-    </tr>
-
-  </table>
- <br>
-<hr>
-
-<h1 align="left"> Ainda têm dúvidas??? <img src="assets/dúvidas.jpg" align="center" width="100px" height="100px" alt="auto";></h1>
-<h2 align="left"> Assista o vídeo.</h2> 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gnh3dwps_jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
- <hr>
-    <h1 align="center"> Se você gostou!!</h1>
-    <h2 align="center"> Venha fazer parte desse time.</h2> 
-  <form>
-    <label>Seu Nome: *</label><br>
-    <input name="Nome" type="text" placeholder=" digite seu nome"><br><br>
-    <label>Seu E-mail: *</label><br>
-    <input name="email" type="text" placeholder="digite seu e-mail"><br><br>
-    <label>Seu Telefone: *</label><br>
-    <input type="tel" placeholder="digite seu telefone"><br><br>
-    <label>Seu Recado:</label><br>
-    <textarea name="contact-message" placeholder="" id="contact-189-0-0-1-contact-message" rows="8" cols="45" class="form-control" required></textarea>
-    <input type="submit" style="color: crimson";   value="Enviar Agora">
-  
-  </form>
-     
-</body>
-<footer> 
-   <hr>
-   <hr>
-   
-    <address style="background-color:rgb(224, 68, 68)">
-      Autor: Renan Mendes - Desenvolvedor Front-end<br>
-      <a href="#"><img src="./assets/icons/facebook.png" align="right" alt="Logo Facebook"></a>
-      <a href="#"><img src="./assets/icons/instagram.png" align="right" alt="Logo Instagram"></a>
-      <a href="#"><img src="./assets/icons/github.png" align="right" alt="Logo Github"></a>
-      <a href="#"><img src="./assets/icons/behance.png" align="right" alt="Logo Behance"></a>
-      Voce pode contratar os serviços em: <a href="http://renanalista@gmail.com">renanalista@gmail.com</a>.<br>
-      telefone: (31)99778-7810.<br>
-      Você tambem pode querer nos visitar:<br>
-      Rua Juraciara 317, B. Emília<br>
-      Sete Lagoas - MG<br>
-      Brasil<br>
-      
-    </address>
-  
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="App/app.js"></script>
+</body>
 
 </html>
